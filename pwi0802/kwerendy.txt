@@ -1,0 +1,11 @@
+SELECT id, tytul, tresc, tresc
+FROM ogloszenie
+WHERE kategoria = 1;
+
+SELECT telefon 
+FROM uzytkownik u INNER JOIN ogloszenie o ON u.id = o.uzytkownik_id 
+WHERE o.id = 1;
+
+CREATE USER 'moderator'@'localhost' IDENTIFIED BY 'qwerty' ;
+
+GRANT DELETE, SELECT ON ogloszenie TO 'moderator'@'localhost'

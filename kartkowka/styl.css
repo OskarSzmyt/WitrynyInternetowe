@@ -1,0 +1,4 @@
+ table, tr, td {border: 1px black solid;
+        table-layout: fixed;
+        padding: 10px;
+        }
