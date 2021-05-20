@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8"/>
+    <title>Technikum informatyczne</title>
+    <link rel="stylesheet" href="styl.css"/>
+    
+</head>
+<body>
+   <div id="naglowek">
+        <div id=logo> 
+            <img src="logo_zsk_m.png" alt="ZSK" displayed=block id="logozsk"/>
+        </div>
+        <div id=test>
+            <div class="a">
+                <a href="index.html"> O nas </a> 
+            </div>
+            <div class="a">
+                <a href="zawod.html">O zawodzie</a> 
+            </div>
+            <div class="a">    
+                <a href="kontakt.html">Kontakt</a>
+            </div>
+        </div>
+    </div>
+    <div id=baner>
+        <div id=banerobraz >
+            <panel>
+            <img src="monito.png" alt="komputery"/>
+            </panel>
+        </div>
+        <div id= banernapis>
+            <a>Technikum Informatyczne</a>
+        </div>
+    </div>      
+    
+    <div id= glowny>
+        <div id=panel>
+        <h2>Kontakt</h2>
+        <div id=form>
+            <p>
+            
+            <input type="text" id="imie" name="imie"  placeholder="imie" class="c"/>
+            </p>
+            <p>
+            
+            <input type="text" id="nazwisko" name="nazwisko" placeholder="Nazwisko" class="c"/>
+            </p>
+            <p>
+            
+            <input type="text" id="mail" name="email" placeholder="Email" class="c"/>
+            </p>
+            <p>
+            <textarea name="opis" rows="9" cols="12" placeholder="Wpisz wiadomosc" class="c" id="opis"></textarea>
+            </p>
+            <p>
+                <input type="checkbox" id="regulamin" name="regulamin" value="regulamin">
+                Zapoznalem sie z regulaminem
+            </p>
+            <p>
+                <button  value="Wyczysc" name="btt" class="d" onclick="wyczysc()">wyczyść</button>
+                <button value="Wyślij" name="bttn" class="d" onclick="formularz()">wyślij</button>
+            </p>
+        
+        </div>
+            <div id="result">
+    
+            </div>
+        </div>
+    </div>
+    <script>
+     function formularz(){
+     var imie = document.getElementById("imie").value;
+     var nazwisko = document.getElementById("nazwisko").value;
+     var mail = document.getElementById("mail").value;
+     var  opis = document.getElementById("opis").value;
+     var result=  document.getElementById("result");
+     var regulamin = document.getElementById("regulamin");
+     if (regulamin.checked){
+         result.classList.remove("red")
+         result.innerHTML=imie.toUpperCase()+" "+nazwisko.toUpperCase()+"</br><br>"+"Odpowiedź na Twoją wiadomość o treści: "+opis+" zostanie przesłana na podany adres: "+mail ;
+         
+     }
+         else{
+             result.classList.add("red")
+             result.innerHTML="Musisz zapoznac się z regulaminem"
+         }
+ }
+        function wyczysc(){
+            var imie = document.getElementById("imie");
+            var nazwisko = document.getElementById("nazwisko");
+            var mail = document.getElementById("mail");
+            var  opis = document.getElementById("opis");
+            imie.value=null;
+            nazwisko.value=null;
+            mail.value=null;
+            opis.value=null;
+        }
+    
+    
+    </script>
+    
+    
+    
+    <footer> Oskar Szmyt, 4D </footer>
+    
+</body>    
+
+    
+    
+</html>

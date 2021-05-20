@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Zadanie 8</title>
+        <meta charset="utf-8"/>
+        <style>
+            body {width: 100%;
+            font-size: 20px;
+            text-align: center;}
+            #main {display: flex;
+            width: 500px;
+            margin: 0 auto;}
+            #main div {border: 1px solid black;
+            flex: 1;}
+            #red {background-color: chocolate;
+            height: 300px;}
+            #blue {background-color: greenyellow;
+            height: 148px;}
+            #yellow {background-color: blueviolet;
+            height: 148px;}
+            #green {background-color: darkgoldenrod;
+            height: 300px;}
+            #center {flex-direction: column;}
+            #main div:nth-of-type(1) {flex-grow: 1;}
+            #main div:nth-of-type(2) {flex-grow: 2;}
+            #main div:nth-of-type(3) {flex-grow: 1;}
+        </style>
+    </head>
+    <body>
+        <div id="main">
+            <div id="red">red</div>
+            <div id="center">
+                <div id="blue">blue</div>
+                <div id="yellow">yellow</div>
+            </div>
+            <div id="green">green</div>
+        </div>
+    </body>
+</html>

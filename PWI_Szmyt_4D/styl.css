@@ -1,0 +1,142 @@
+body {
+    background-color: #CECEDB;
+    margin: 0;
+    font-family: sans-serif;
+    font: Veranda;
+    color: #393C6E;
+    width: 90%;
+    margin: 0 auto;
+    
+}
+#glowny {
+    
+    width: 1200px;
+   display: flex;
+  align-items: center;
+  justify-content: center;
+    
+}
+#naglowek {
+    
+    background-color: #393C6E;
+    height: 150px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#logo{
+    
+    width: 30%;
+    object-position: center;
+    display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#logozsk{
+    
+    border: solid;
+    border: 2px;
+    border-color: #CECEDB;
+    border-radius: 1px;
+}
+#menu{
+    
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    float: right;
+}
+
+.a{
+    width: 200px;
+    height: 50px;
+    background-color: #CECEDB;
+    margin:10px;
+    font-size: 130%;
+    text-decoration: none;
+    text-align: center;
+     display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    }
+.a a {
+    text-decoration: none;
+   
+}
+.a:hover{
+    background-color: #393C6E;
+    color: #CECEDB ;
+}
+.a:hover a{
+    background-color: #393C6E;
+    color: #CECEDB ;
+}
+#baner{
+    background-color: #9C9DB6;
+    display: flex;
+    flex-direction: row;
+    height: 250px;
+}
+#banerobraz{
+    width: 30%;
+}
+#banernapis{
+    width: 70%;
+    
+    display: flex;
+  align-items: center;
+  justify-content: center;
+      
+    font-size: 300%;
+}
+#glowny{
+    margin: 15px;
+    background-color: #CECEDB ;
+   
+}
+#panel{
+    width: 60%;
+    border-top: 2px solid #393C6E;
+    border-bottom: 2px solid #393C6E;
+    min-height: 300px;
+    margin: 0 auto;
+}
+h2{
+  display: flex;
+  align-items: center;
+  justify-content: center;   
+}
+footer{
+    background-color: #393C6E;
+    padding: 10px;
+    color: white;
+    text-align: right;
+}
+#test{
+    display: flex;
+}
+
+#form{
+    width: 60%;
+    margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+}
+.b{
+    text-align: center;
+}
+.c{
+    width: 100%;
+    padding: 10px;
+    resize: none;
+    }
+.d{
+    background-color: #393C6E;
+    width: 49%;
+    padding: 10px;
+    color: white;
+}
+.red{
+    color: red;
+}

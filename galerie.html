@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sybkie fury</title>
+<style>
+    .glowny{ display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows:repeat(3,150px);
+    grid-gap: 12px;
+    grid-auto-rows: minmax(100px, auto);
+    grid-template-areas: 'a a a b'
+                         'c c d d'
+                         'e e . f';
+    }
+    .a{grid-area: a;}
+    .b{grid-area: b;}
+    .c{grid-area: c;}
+    .d{grid-area: d;}
+    .e{grid-area: e;}
+    .f{grid-area: f;}
+    .photo{width: 100%;
+    height: 100%;
+    object-fit:cover;}
+    
+</style>
+</head>
+<body>
+    <div class="glowny">
+        <div class="a"><img src="a.jpg" class="photo"></div>
+        <div class="b"><img src="b.jpg" class="photo"></div>
+        <div class="c"><img src="c.jpg" class="photo"></div>
+        <div class="d"><img src="d.jpg" class="photo"></div>
+        <div class="e"><img src="e.jpg" class="photo"></div>
+        <div class="f"><img src="f.jpg" class="photo"></div>
+       
+    </div>
+</body>
+</html>

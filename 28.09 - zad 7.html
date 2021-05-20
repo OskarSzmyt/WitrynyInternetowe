@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="utf-8">
+        <title>Zadanie 7</title>
+        <style>
+            body {margin: 0 auto;
+                min-width: 468px;
+                height: 100p;
+                background-color: cyan;}
+        #main1 {background-color: black;
+            border: 1px solid black;
+            display: flex;
+            justify-content: space-around;}
+         #main1 div {
+                background-color: coral;
+                border: 1px solid black;
+                padding: 10px;
+                flex-basis: 25%;
+            }
+        #a {
+            height: 50px;
+            }
+        #b {
+            height: 150px;
+            }
+        #c {
+            height: 250px;
+            }
+            
+        #main2 {
+            background-color: black;
+            border: 1px solid black;
+            display: flex;
+            justify-content: space-around;
+            }
+         #main2 div {
+             background-color: red;
+            border: 1px solid black;
+            padding: 10px;
+            flex-basis: 25%;
+            }
+            #a2 {
+                height: 50px;
+            align-self: flex-end;
+            }
+            #b2 {
+                height: 150px;
+            }
+            #c2 {
+                height: 250px;
+            }
+            
+        #main3 {
+            height: 70vh;
+            background-color: purple;
+            border: 1px solid black;
+            display: flex;
+            justify-content: space-around;
+            flex-flow: wrap row;
+            }
+         #main3 div {
+             background-color: orange;
+            border: 1px solid black;
+            padding: 10px;
+            align-items: center;
+            justify-content: center;
+            }
+            #a3 {
+                height: 50px;
+            flex-basis: 35%;
+            margin:0;
+            align-self:flex-end;
+            }
+            #b3 {
+                height: 150px;
+            flex-basis: 35%;
+            margin:0;
+            align-self:center;
+            }
+            #c3 {
+                height: 250px;
+            flex-basis: 35%;
+            margin:0;
+            align-self:center;
+            }
+        </style>
+    </head>
+    <body>
+        <p><b>Zad. 7a</b>
+          <div id="main1">
+            <div id="a">Box 1</div>
+            <div id="b">Box 2</div>
+            <div id="c">Box 3</div>
+        </div>
+        <p><b>Zad. 7b</b>
+        <div id="main2">
+            <div id="a2">Box 4</div>
+            <div id="b2">Box 5</div>
+            <div id="c2">Box 6</div>
+        </div>
+        <p><b>Zad. 7c</b>
+        <div id="main2">
+            <div id="a3">Box 7</div>
+            <div id="b3">Box 8</div>
+            <div id="c3">Box 9</div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+    .grid-container{
+        display: grid;
+        grid-template-columns: 0.6fr 3fr 1.2fr;
+        grid-column-gap: 2px;
+        grid-template-rows: 1.5fr 2.5fr 1fr;
+        
+    }
+    .header{
+        background-color: aquamarine;
+        grid-column:1/4;
+        grid-row: 1;
+        padding: 26px;
+        text-align: center;
+        
+    }
+    .left{
+        background-color: blueviolet;
+         grid-column:1/2;
+        grid-row: 2;
+    }
+    .middle{
+         background-color: darkcyan;
+         grid-column:2/3;
+        grid-row: 2;
+    }
+    .right{
+         background-color: indianred;
+         grid-column:3/4;
+        grid-row: 2;
+    }
+    .footer
+    {
+         background-color:aquamarine;
+         grid-column:1/4;
+        grid-row: 3;
+    }
+    
+</style>
+</head>
+<body>
+
+ 
+
+<div class="grid-container">
+  <div class="header">
+    <h2>nagłówek</h2>
+  </div>
+  
+  <div class="left" >zawartość</div>
+  <div class="middle" >zawartość</div>  
+  <div class="right" >zawartość</div>
+  
+  <div class="footer">
+    <p>stopka</p>
+  </div>
+</div>
+
+ 
+
+</body>
+</html>
