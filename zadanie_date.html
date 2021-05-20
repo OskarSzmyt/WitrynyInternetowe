@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="utf-8" lang="pl"/>
+
+</head>
+<body>
+    <p>Jaki dzisiaj dzień?</p>
+    <button id="btn1">Wyświetl dzień</button>
+    <p id="czas"></p>
+    <div id="czas2"></div>
+    <script>
+
+        function dzis()
+        
+        {
+            var dzienSlownie = '';
+            var data = new Date();
+            var data2 = data.toLocaleString();
+            var dzienLiczbowo = data.getDay();
+
+            switch(dzienLiczbowo){
+                case 0: dzienSlownie='niedziela';break;
+                case 1: dzienSlownie='poniedzialek';break;
+                case 2: dzienSlownie='wtorek';break;
+                case 3: dzienSlownie='sroda';break;
+                case 4: dzienSlownie='czwartek';break;
+                case 5: dzienSlownie='piatek';break;
+                case 6: dzienSlownie='sobota';
+            }
+
+            document.getElementById("czas").innerHTML = 'Dzisiaj jest '+dzienSlownie+', '+data2;
+        }
+        
+        
+            var currentDate = new Date();
+            var days = ["Niedziela","Poniedzialek","Wtorek","Środa","Czwartek","Piatek","Sobota"];
+            document.getElementById("czas2").innerHTML= "Dzisiaj jest " + days[currentDate.getDay()] + ", "+ currentDate.toLocaleString();
+        
+        btn1.addEventListener("click", dzis)
+    </script>
+</body>
+</html>

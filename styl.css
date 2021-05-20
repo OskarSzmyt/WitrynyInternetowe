@@ -1,0 +1,82 @@
+body{
+    background-color: dodgerblue;
+    margin: auto;
+}
+
+ol > li {
+    list-style-type: none;
+
+}
+
+.pierwszy{
+    position: relative;
+    width: 100px;
+    color: white;
+    background-color: dimgray;
+    margin-top: 5px;
+    top: 3px;
+    left: 2px;
+}
+
+
+.drugi{
+    color: white;
+    position: relative;
+    left: 80%;
+    top: 10em;
+}
+
+.obrazy{
+    position: absolute;
+    margin-top: 10em;
+    width: 100%;
+    height: 10em;
+    background-color: darkolivegreen;
+}
+
+ol.obrazy > li{
+    display: inline;
+}
+
+ol.obrazy > li > img {
+    width: 8em;
+    height: 8em;
+    margin-left: 5em;
+    margin-top: 1em;
+}
+
+form
+{
+    margin-top: 15%;
+    margin-left: 35%;
+    margin-right: 35%
+}
+
+.podpunkt
+{
+    color:white;
+    
+}
+
+.button {
+  background-color: dimgrey;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: serif;
+  display: inline-block;
+  font-size: 12px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.podsumowanie
+{
+    outline-color: white;
+    outline-width: thin;
+    outline-style: solid;
+    margin-top: 15%;
+    margin-left: 35%;
+    margin-right: 35%;
+}

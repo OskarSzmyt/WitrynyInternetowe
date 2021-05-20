@@ -1,0 +1,56 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+
+    <meta charset="utf-8" lang="pl"/>
+
+</head>
+<body>
+    <!--
+    <input type="button" id="btn1" value="Otwórz okno"/>
+    <script>
+
+        function okno()
+        {
+            var win = window.open("", "Nowe onko", "width=200, height=200");
+            win.document.write("<div>Siema</div>");
+            setTimeout(function(){ win.close()}, 100000);
+        }
+        btn1.addEventListener("click", okno);
+    </script>
+    -->
+
+
+    <ul id="lista">
+        <h2>Wypisuje</h2>
+    </ul>
+
+    <button id="btn1">Stop</button>
+
+    <script>
+        var a = 1;
+        var n = prompt("Do ilu liczymy?");
+        function licz()
+        {
+            {
+            var punkt = document.createElement("li");
+            punkt.textContent = a;
+            a=a+1;
+            lista.appendChild(punkt);
+            }
+
+        }
+        var pow = window.setInterval(licz,1000);
+        
+        function zatrz()
+        {
+            window.clearInterval(pow);
+        }
+
+        btn1.addEventListener("click", zatrz);
+
+    </script>
+
+
+</body>
+</html>

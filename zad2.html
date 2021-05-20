@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+</head>
+<body>
+    <input type="number" id= "m2"> ile metrów 
+    <input type="number" id= "siec">ile pokoi
+    <input type="checkbox" id= "kafelek">Kafelki si/no
+    <button>Oblicz</button>
+    <div></div>
+    
+           
+  <script>
+      document.querySelector("button").addEventListener("click" , function (){
+          if(kafelek.checked)
+              {
+                document.querySelector("div"). textContent = "koszt mieszkania" + (m2.value * 4000 +siec.value * 1000 + 2000) + "zł"
+              }
+          else{
+          document.querySelector("div"). textContent = "koszt mieszkania" + (m2.value * 4000 +siec.value * 1000)+ "zł"
+              }
+      });
+     
+  </script>
+</body>
+</html>

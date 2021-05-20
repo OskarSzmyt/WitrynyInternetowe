@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='style.css' type='text/css'>
+    <title>Zadanie</title>
+	<style>
+		.box
+	{
+		border: 1px dashed black;
+		padding:2rem;
+		margin-top:2rem;
+		width: 10%;
+		display: inline-block;
+	}
+
+	.box-clicked
+	{
+		background-color: green;
+		display: block;
+	}
+	</style>	
+</head>
+<body>
+	
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+	<div class="box"></div>
+	<div class="box"></div>
+	<br/>
+	<button id='btn'>zmiana połozenia</button>
+	
+	<script>
+    var boxes = document.querySelectorAll('.box');
+	// var bt = document.getElementById("btn");
+	for (let i in boxes)
+	{
+		// boxes[i].onclick = function()
+		// {
+		//     this.classList.toggle("box-clicked");
+		// }
+		
+		btn.addEventListener("click", function(){
+		boxes[i].classList.toggle("box-clicked");
+		});
+	}
+	</script>
+	
+</body>
+</html>

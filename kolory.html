@@ -1,0 +1,19 @@
+<html>
+    <body>
+        <input id="butt" type="button" value="Losuj">
+        <p></p>
+        <script>
+            butt.addEventListener("click", skrypt);
+            function skrypt() {
+                let par1 = (Math.floor(Math.random() * 16)).toString(16) + (Math.floor(Math.random() * 16)).toString(16);
+                let par2 = (Math.floor(Math.random() * 16)).toString(16) + (Math.floor(Math.random() * 16)).toString(16);
+                let par3 = (Math.floor(Math.random() * 16)).toString(16) + (Math.floor(Math.random() * 16)).toString(16);
+                
+                let kolor =  "#" + par1 + par2 + par3;
+                document.querySelector("p").innerText = kolor;
+            
+                document.body.style.backgroundColor = kolor;
+            }
+        </script>
+    </body>
+</html>

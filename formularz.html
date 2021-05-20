@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Fotmularz</title>
+    <meta charset="utf-8">
+    </head>
+    <body>
+        <form action="mailto:oskarszmyt2001@gmail.com" method="post" enctype="text/plain" name="hobby_form">
+            <fieldset>
+                <legend>Dane osobowe</legend>
+                
+                <label for="i">Podaj imie:</label>
+                <input type="text" id="i" name="imie" size="25" maxlength="15" placeholder="Podaj imie" value="podaj imie" disabled/>
+                
+                <label for="k">kobieta</label>
+                <input type="radio" id="k" name="sex" value="kobieta">
+                
+                <label for="m">mężczyzna</label>
+                <input type="radio" id="m" name="sex" value="mężczyzna" checked="checked">
+                
+                <label for="h">muzyka</label>
+                <input type="checkbox" id="h" name="hobby" value="muzyka">
+                
+                <label for="ha">ksiązka</label>
+                <input type="checkbox" id="ha" name="hobby" value="muzyka">
+                
+                <label for="xd">ulubiony kolor</label>
+                <input type="color" id="xd" name="kolor"/>
+                
+                <select name="SYSTEM" size="4" multiple>
+                    <optgroup label="systemy operacyjne">
+                    <option>windows</option>
+                    <option>linux</option>
+                    <option>macos</option>
+                    </optgroup>
+                <textarea name="opis" rows="9" cols="12"></textarea>
+                </select>
+                <input type="range" min="0" max="10" step="1" name="skala"/>
+            </fieldset>
+            <input type="submit" value="wyślij" name="btt"/>
+        
+        
+        </form>
+    </body>
+</html>

@@ -1,0 +1,17 @@
+body{/*background-image: url(lisc.jpg);
+background-repeat: repeat-x;
+background-attachment: fixed;
+background-size: 80%;
+background-position: center top;
+background: #00ff00 url(lisc.jpg) no-repeat fixed center*/
+background-image: url("stragan.jpg");
+    background-repeat: repeat-x;
+    background-size: auto;
+    background-position: left;}
+pre {/*font-size: 15px;
+font-family: "Courier New", monospace;
+font-style: italic;
+font-weight: lighter;
+line-height: 2em;*/
+color: orange;}
+font; italic bolder 15px /2em "Courier New", monospace;

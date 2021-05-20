@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>Zadanie 3</title>
+</head>
+<body>
+    
+
+    <input type="number" id="ilosc"/> Ile ogłoszen?
+    <input type="checkbox" id="news"/> Newsletter tak/nie?
+    <button id="przycisk">Oblicz</button>
+
+    <div id="wynik"></div>
+
+<script> 
+    przycisk.onclick = function(){
+    if(ilosc.value<51)
+        {
+        if(news.checked)
+            wynik.textContent = "Cena za ogłoszenia wynosi: " + (ilosc.value * 1.8).toFixed(2) + "zł"
+        else
+            wynik.textContent = "Cena za ogłoszenia wynosi: " + (ilosc.value * 2) + "zł"
+        }
+    else
+    {
+        if(news.checked)
+            wynik.textContent = "Cena za ogłoszenia wynosi: " + (ilosc.value * 0.8).toFixed(2) + "zł"
+        else
+            wynik.textContent = "Cena za ogłoszenia wynosi: " + (ilosc.value * 1) + "zł"
+    }   
+}
+    </script>
+</body>
+</html>
